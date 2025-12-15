@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MY WEBSITE</title>
+
+    <script>
+        function checkLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "LLL_NEKO" && password === "meowmeowT_T") {
+                alert("Login successful!");
+                window.location.href = "page2.html";
+            } else {
+                alert("Wrong username or password!");
+            }
+        }
+    </script>
+</head>
+
+<body background="japan.jpg">
+
+<br><br>
+
+<table align="center" width="420" cellpadding="15" bgcolor="#333333">
+    <tr>
+        <td align="left">
+            <img src="ics-Photoroom.png" width="60">
+        </td>
+        <td align="right">
+            <img src="tcgc-Photoroom (1).png" width="60">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <font color="white" size="6"><b>Login</b></font>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <input type="text" placeholder="Username" size="30">
+        </td>
+    </tr>
+
+   <tr>
+    <td colspan="2" align="center">
+        <input type="password" id="password" placeholder="Password" size="30">
+        <br>
+        <input type="checkbox" id="showPassword" onclick="togglePassword()"> Show Password
+    </td>
+    </tr>
+    <tr>
+        <td>
+            <font color="white">
+                <input type="checkbox"> Remember Me
+            </font>
+        </td>
+        <td align="right">
+            <a href="#"><font color="white">Forgot Password?</font></a>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <a href="page2.html">
+                <input type="button" value="Login">
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <font color="white">
+                Don't have an account?
+                <a href="#"><font color="white"><b>Register</b></font></a>
+            </font>
+        </td>
+    </tr>
+</table>
+    <script>
+    function togglePassword() {
+        var pass = document.getElementById("password");
+        if (pass.type === "password") {
+            pass.type = "text";  // ipakita ang password
+        } else {
+            pass.type = "password"; // itago balik
+        }
+    }
+</script>
+
+
+</body>
+</html>
